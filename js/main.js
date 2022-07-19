@@ -2,6 +2,7 @@ let canvas;
 let ctx;
 let drawer;
 let navDrawer;
+let contentMain;
 let drawerSwitch=false;
 let girlImgSrc = new Image();
 let girlPos = {
@@ -21,6 +22,7 @@ let anims = [
 
 window.onload = function() {
 
+    contentMain = document.getElementById("content");
     drawer = document.querySelector(".drawer");
     navDrawer = document.querySelector(".nav-drawer");
     
@@ -53,12 +55,9 @@ function drawerMechanics() {
         if(drawerSwitch) {
 
             navDrawer.classList.add("open");
-            //drawerSwitch=false;
-            console.log(drawer.classList);
+
         } else {
             navDrawer.classList.remove("open");
-            //drawerSwitch=true;
-            console.log(drawer.classList);
         }
     });
 }

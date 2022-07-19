@@ -111,5 +111,5 @@ article {
     width: 30%;
     height: 60%;
     background-color: rgba(125, 172, 194, 2);
-    border: 2px double red;
+    border: 2px solid rgb(6, 51, 43);
 }
