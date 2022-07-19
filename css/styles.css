@@ -1,19 +1,21 @@
 body {
     margin: 0px;
-    min-height: 1000px;
+    min-height: 2000px;
+    background-color: rgb(36, 70, 70);
 }
 
 .navigation {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     color: aliceblue;
     background-color: black;
     font-size: large;
     position: fixed;
     width: 100%;
+    z-index: 2;
 }
 
 .navigation div {
@@ -21,6 +23,7 @@ body {
     border-radius: 10px;
     padding: 20px;
     cursor: pointer;
+    margin: 1vh;
 }
 
 .navigation div:hover {
@@ -29,13 +32,43 @@ body {
 
 
 .drawer {
-
+    flex-shrink: 1;
 }
 
 .newsfeed {
-
+    flex-shrink: 1;
 }
 
 .about {
+    flex-shrink: 1;
+}
 
+.navigation canvas {
+    flex-shrink: 1;
+}
+
+.content {
+    position: relative;
+    top: 30vh;
+    color: aliceblue;
+    padding: 2vh;
+    overflow: hidden;
+}
+
+.next-button {
+    cursor: pointer;
+    margin-top: 10vh;
+}
+
+.prev-button {
+    cursor: pointer;
+    margin-top: 10vh;
+}
+
+.next-button:hover {
+    background-color: blueviolet;
+}
+
+.prev-button:hover {
+    background-color: blueviolet;
 }
