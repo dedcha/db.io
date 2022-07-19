@@ -69,8 +69,10 @@ class Content extends React.Component {
                         <article>{item}</article>
                     )
                 )}
-                <div><button className="prev-button" onClick={this.showPrev}>Prev--</button></div>
-                <div><button className="next-button" onClick={this.showNext}>next--</button></div>
+                <div className="paginator">
+                    <div><button className="prev-button" onClick={this.showPrev}>Prev--</button></div>
+                    <div><button className="next-button" onClick={this.showNext}>next--</button></div>
+                </div>
             </div>
         );
         

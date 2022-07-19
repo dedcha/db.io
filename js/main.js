@@ -1,5 +1,8 @@
 let canvas;
 let ctx;
+let drawer;
+let navDrawer;
+let drawerSwitch=false;
 let girlImgSrc = new Image();
 let girlPos = {
     x: 0,
@@ -18,7 +21,9 @@ let anims = [
 
 window.onload = function() {
 
-
+    drawer = document.querySelector(".drawer");
+    navDrawer = document.querySelector(".nav-drawer");
+    
     canvas = document.getElementById("canv");
     ctx = canvas.getContext("2d");
     girlImgSrc.src = `assets/${anims[animIndex]}.png`;
@@ -36,7 +41,26 @@ window.onload = function() {
         
     }, 500);
 
+    drawerMechanics();
+
     
+}
+
+
+function drawerMechanics() {
+    drawer.addEventListener("click", () => {
+        drawerSwitch= !drawerSwitch;
+        if(drawerSwitch) {
+
+            navDrawer.classList.add("open");
+            //drawerSwitch=false;
+            console.log(drawer.classList);
+        } else {
+            navDrawer.classList.remove("open");
+            //drawerSwitch=true;
+            console.log(drawer.classList);
+        }
+    });
 }
 
 

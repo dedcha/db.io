@@ -4,6 +4,10 @@ body {
     background-color: rgb(36, 70, 70);
 }
 
+article {
+    text-align: center;
+}
+
 .navigation {
     display: flex;
     flex-direction: row;
@@ -21,7 +25,7 @@ body {
 .navigation div {
     background-color: rgb(85, 23, 23);
     border-radius: 10px;
-    padding: 20px;
+    padding: 3px;
     cursor: pointer;
     margin: 1vh;
 }
@@ -58,11 +62,17 @@ body {
 .next-button {
     cursor: pointer;
     margin-top: 10vh;
+    border-radius: 5px;
+    color: rgba(20, 20, 20, 5);
+    box-shadow: 5px 5px 20px 1px white;
 }
 
 .prev-button {
     cursor: pointer;
     margin-top: 10vh;
+    border-radius: 5px;
+    color: rgba(20, 20, 20, 5);
+    box-shadow: 5px 5px 20px 1px white;
 }
 
 .next-button:hover {
@@ -71,4 +81,35 @@ body {
 
 .prev-button:hover {
     background-color: blueviolet;
+}
+
+.paginator {
+    position: fixed;
+    bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    z-index: 2;
+}
+
+.nav-drawer {
+    position: fixed;
+    top: 21vh;
+    width: 0px;
+    height: 0px;
+    background-color: rgba(125, 172, 194, 0);
+    border-bottom-right-radius: 10px;
+    padding-top: 6vh;
+    z-index: 3;
+    padding-left: 3vh;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.nav-drawer.open {
+    width: 30%;
+    height: 60%;
+    background-color: rgba(125, 172, 194, 2);
+    border: 2px double red;
 }

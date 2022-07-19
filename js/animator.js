@@ -1,10 +1,10 @@
 function animateSprite(src, x,y, width,height, scaleX,scaleY, index) {
-    let f = genSpriteSheet(src, width, height);
+    this.f = genSpriteSheet(src, width, height);
     
     this.index = index;
     this.end = genSpriteSheet.length;
-    this.animate = function() {
-        ctx.drawImage(girlImgSrc, f[this.index].clipX,f[this.index].clipY, width, height, x,y, width*scaleX, height*scaleY);
+    this.animate = () => {
+        ctx.drawImage(girlImgSrc, this.f[this.index].clipX,this.f[this.index].clipY, width, height, x,y, width*scaleX, height*scaleY);
         this.index = (this.index + 1)%this.end;
     }
     this.animate();
