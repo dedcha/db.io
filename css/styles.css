@@ -11,7 +11,7 @@ article {
 .navigation {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-top: 2vh;
     padding-bottom: 2vh;
     color: aliceblue;
@@ -36,7 +36,7 @@ article {
 
 
 .drawer {
-    flex-shrink: 1;
+    flex-shrink: 4;
 }
 
 .newsfeed {
@@ -95,7 +95,7 @@ article {
 
 .nav-drawer {
     position: fixed;
-    top: 21vh;
+    top: 19vh;
     width: 0px;
     height: 0px;
     background-color: rgba(125, 172, 194, 0);
@@ -107,9 +107,43 @@ article {
     transition: all 0.5s;
 }
 
+.nav-drawer button {
+    position: relative;
+    left: 80%;
+    top: 1%;
+    border-radius: 10px;
+}
+
+.nav-drawer button:hover {
+    background-color: red;
+}
+
 .nav-drawer.open {
     width: 30%;
     height: 60%;
     background-color: rgba(125, 172, 194, 2);
     border: 2px solid rgb(6, 51, 43);
+}
+
+.drawer-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.drawer-items label {
+    background-color: rgba(200, 172, 194, 200);
+    width: 80%;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.drawer-items label:hover {
+    background-color: rgba(200, 172, 255, 200);
+    color: white;
+    cursor: pointer;
 }

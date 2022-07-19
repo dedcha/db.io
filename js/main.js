@@ -48,6 +48,11 @@ window.onload = function() {
     
 }
 
+function closeNavDrawer() {
+    navDrawer.classList.remove("open");
+    drawerSwitch=false;
+}
+
 
 function drawerMechanics() {
     drawer.addEventListener("click", () => {
@@ -87,16 +92,16 @@ function moveGirl() {
 
     if(direction =="right") {
 
-        girlPos.x = Math.min(girlPos.x + 0.2, 45);
+        girlPos.x = Math.min(girlPos.x + 0.4, canvas.width-40);
     }
 
     if(direction =="left") {
 
-        girlPos.x = Math.max(girlPos.x - 0.2, 0);
+        girlPos.x = Math.max(girlPos.x - 0.4, 0);
     }
 
     if(Math.floor(girlPos.x)==0) direction="right";
-    if(Math.floor(girlPos.x)==45) direction="left";
+    if(Math.floor(girlPos.x)==canvas.width-40) direction="left";
     
 }
 
