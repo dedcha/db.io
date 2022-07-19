@@ -11,7 +11,7 @@ article {
 .navigation {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-top: 2vh;
     padding-bottom: 2vh;
     color: aliceblue;
