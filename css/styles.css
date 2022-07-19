@@ -30,6 +30,14 @@ article {
     margin: 1vh;
 }
 
+
+.title {
+    position: relative;
+    padding-top: 10px;
+    height: 100%;
+    flex-shrink: 1;
+}
+
 .navigation div:hover {
     color: red;
 }
@@ -119,7 +127,7 @@ article {
 }
 
 .nav-drawer.open {
-    width: 30%;
+    width: 60%;
     height: 60%;
     background-color: rgba(125, 172, 194, 2);
     border: 2px solid rgb(6, 51, 43);
