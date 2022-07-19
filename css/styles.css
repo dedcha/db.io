@@ -73,6 +73,7 @@ article {
     border-radius: 5px;
     color: rgba(20, 20, 20, 5);
     box-shadow: 5px 5px 20px 1px white;
+    flex-grow: 1;
 }
 
 .prev-button {
@@ -81,6 +82,7 @@ article {
     border-radius: 5px;
     color: rgba(20, 20, 20, 5);
     box-shadow: 5px 5px 20px 1px white;
+    flex-grow: 1;
 }
 
 .next-button:hover {
@@ -103,11 +105,11 @@ article {
 
 .nav-drawer {
     position: fixed;
-    top: 19vh;
+    top: 18vh;
     width: 0px;
     height: 0px;
     background-color: rgba(125, 172, 194, 0);
-    border-bottom-right-radius: 10px;
+    border-bottom-right-radius: 20px;
     padding-top: 6vh;
     z-index: 3;
     padding-left: 3vh;
@@ -119,7 +121,7 @@ article {
     position: relative;
     left: 80%;
     top: 1%;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .nav-drawer button:hover {
