@@ -51,6 +51,8 @@ const Content = (p) => {
     const [items, setItems]=useState(p.items);
     const [tempItems, setTempItems]=useState([]);
     const [pageStart, setPageStart]=useState(0);
+    const [pageOutStart, setPageOutStart]=useState(false);
+    const [pageOutEnd, setPageOutEnd]=useState(false);
 
     useEffect(() => {
         var tItems=items.slice(0,5);
@@ -69,8 +71,11 @@ const Content = (p) => {
         if(pageStart>=items.length-5) {
             var tempList = items.slice(pageStart, items.length);
             setTempItems(tempList);
+            setPageOutEnd(true);
             return;
         };
+        setPageOutEnd(false);
+        setPageOutStart(false);
         setPageStart(pageStart+5);
         var tempList = items.slice(pageStart, pageStart+5);
         setTempItems(tempList);
@@ -81,8 +86,11 @@ const Content = (p) => {
         if(pageStart<=0) {
             var tempList = items.slice(pageStart, pageStart+items.length);
             setTempItems(tempList);
+            setPageOutStart(true);
             return;
         };
+        setPageOutStart(false);
+        setPageOutEnd(false);
         setPageStart(pageStart-5);
         var tempList = items.slice(pageStart, pageStart+5);
         setTempItems(tempList);
@@ -96,17 +104,19 @@ const Content = (p) => {
 
             {!checkTempItems && <div>Loading..</div>}
 
-            <div className="paginator"><Paginator nextPage={nextPage} prevPage={prevPage} /></div>
+            <div className="paginator"><Paginator pageOutStart={pageOutStart} pageOutEnd={pageOutEnd} nextPage={nextPage} prevPage={prevPage} /></div>
         </div>
     )
 }
 
 
-const Paginator = ({nextPage, prevPage}) => {
+const Paginator = ({nextPage, prevPage, pageOutStart, pageOutEnd}) => {
     return (
         <div className="pagi-buttons">
-            <button onClick={prevPage}>Prev Page</button>
-            <button onClick={nextPage}>Next Page</button>
+            {!pageOutStart && <button onClick={prevPage}>Prev Page</button>}
+            {!pageOutEnd && <button onClick={nextPage}>Next Page</button>}
+            {pageOutStart && <button disabled onClick={prevPage}>Prev Page</button>}
+            {pageOutEnd && <button disabled onClick={nextPage}>Next Page</button>}
         </div>
     );
 }
