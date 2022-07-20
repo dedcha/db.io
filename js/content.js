@@ -4,7 +4,7 @@
 
 let articleList = [
 
-    {src: "assets/skip.png", article: "first sdfasdasdfasdasdasdasd asdasdasdasdas asdasdasdasdasd asdasdasd"},
+    {src: "assets/skip.png", article: "ParagraphParagraphsarethegroupofsentencescombinedtogether,aboutacertaintopic.Itisaveryimportantformofwritingaswewritealmosteverythinginparagraphs,beitananswer,essay,story,emails,etc.Wecansaythatawell-structuredparagraphistheessenceofgoodwriting.Thepurposesoftheparagrapharetogiveinformation,toexplainsomething,totellastory,andtoconvincesomeonethatourideaisright.Paragraphsareblocksoftextualcontentthatsegmentoutalargerpieceofwriting—stories,novels,articles,creativewriting,orprofessionalwritingportions—makingitlesscomplicatedtoreadandunderstand.Excellentparagraphsareanavailablewritingskillforplentyoftypesofliterature,andproperwriterscansubstantiallybeautifytheclarityoftheirnews,essays,orfictionwritingwhilstconstructingnicely."},
     {src: "", article: "second"},
     {src: "assets/skip.png", article: "first"},
     {src: "assets/slide.png", article: "second"},
