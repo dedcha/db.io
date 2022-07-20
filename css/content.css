@@ -93,3 +93,22 @@
         height: auto;
     }
 }
+
+.pagi-buttons {
+    padding: 10px;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.pagi-buttons button {
+    border-radius: 10px;
+}
+
+.pagi-buttons button:hover {
+    background-color: rgb(138, 97, 97);
+    width: 32%;
+    cursor: pointer;
+}

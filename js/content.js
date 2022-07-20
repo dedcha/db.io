@@ -9,7 +9,19 @@ let articleList = [
     {src: "assets/skip.png", article: "first"},
     {src: "assets/slide.png", article: "second"},
     {src: "assets/skip.png", article: "first"},
-    {src: "assets/slide.png", article: "second"}
+    {src: "assets/slide.png", article: "second"},
+    {src: "assets/skip.png", article: "ParagraphParagraphsarethegroupofsentencescombinedtogether,aboutacertaintopic.Itisaveryimportantformofwritingaswewritealmosteverythinginparagraphs,beitananswer,essay,story,emails,etc.Wecansaythatawell-structuredparagraphistheessenceofgoodwriting.Thepurposesoftheparagrapharetogiveinformation,toexplainsomething,totellastory,andtoconvincesomeonethatourideaisright.Paragraphsareblocksoftextualcontentthatsegmentoutalargerpieceofwriting—stories,novels,articles,creativewriting,orprofessionalwritingportions—makingitlesscomplicatedtoreadandunderstand.Excellentparagraphsareanavailablewritingskillforplentyoftypesofliterature,andproperwriterscansubstantiallybeautifytheclarityoftheirnews,essays,orfictionwritingwhilstconstructingnicely."},
+    {src: "", article: "second"},
+    {src: "assets/skip.png", article: "first"},
+    {src: "assets/slide.png", article: "second"},
+    {src: "assets/skip.png", article: "first"},
+    {src: "assets/slide.png", article: "second"},
+    {src: "assets/skip.png", article: "ParagraphParagraphsarethegroupofsentencescombinedtogether,aboutacertaintopic.Itisaveryimportantformofwritingaswewritealmosteverythinginparagraphs,beitananswer,essay,story,emails,etc.Wecansaythatawell-structuredparagraphistheessenceofgoodwriting.Thepurposesoftheparagrapharetogiveinformation,toexplainsomething,totellastory,andtoconvincesomeonethatourideaisright.Paragraphsareblocksoftextualcontentthatsegmentoutalargerpieceofwriting—stories,novels,articles,creativewriting,orprofessionalwritingportions—makingitlesscomplicatedtoreadandunderstand.Excellentparagraphsareanavailablewritingskillforplentyoftypesofliterature,andproperwriterscansubstantiallybeautifytheclarityoftheirnews,essays,orfictionwritingwhilstconstructingnicely."},
+    {src: "", article: "second"},
+    {src: "assets/skip.png", article: "first"},
+    {src: "assets/slide.png", article: "second"},
+    {src: "assets/skip.png", article: "first"},
+    {src: "assets/slide.png", article: "second"},
 
 ];
 
@@ -41,8 +53,27 @@ const Content = (p) => {
             {items && items.map(item => (
                 <ContentItem article={item.article} src={item.src} />
             ))}
+
+            <div className="paginator"><Paginator /></div>
         </div>
     )
+}
+
+const nextPage = () => {
+    console.log("paggingggggg");
+}
+
+const prevPage = () => {
+    console.log("paggingggggg");
+}
+
+const Paginator = () => {
+    return (
+        <div className="pagi-buttons">
+            <button onClick={nextPage}>Prev Page</button>
+            <button onClick={prevPage}>Next Page</button>
+        </div>
+    );
 }
 
 
