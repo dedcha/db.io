@@ -115,8 +115,7 @@ const Paginator = ({nextPage, prevPage, pageOutStart, pageOutEnd}) => {
         <div className="pagi-buttons">
             {!pageOutStart && <button onClick={prevPage}>Prev Page</button>}
             {!pageOutEnd && <button onClick={nextPage}>Next Page</button>}
-            {pageOutStart && <button disabled onClick={prevPage}>Prev Page</button>}
-            {pageOutEnd && <button disabled onClick={nextPage}>Next Page</button>}
+           
         </div>
     );
 }
