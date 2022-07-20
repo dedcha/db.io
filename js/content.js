@@ -1,90 +1,49 @@
 
 
-class Content extends React.Component {
-    constructor(props) {
-        super(props)
-
-        
-        this.state = {
-            pageIndexStart: 0,
-            pageIndexEnd: 5,
-            articles: props.articles,
-            filteredList: props.articles.length > 5 ? props.articles.slice(0, 5):
-            props.articles,
-        };
-        
-    }
 
 
-    showNext = () => {
+let articleList = [
 
-        //if(this.state.articles.length<5) return;
-        if(this.state.pageIndexStart>=this.state.articles.length) {
-            console.log(this.state.pageIndexStart, "end of index");
-            this.setState({
-                pageIndexStart: this.state.articles.length-5
-            });
-            return;
-        }
+    {src: "assets/skip.png", article: "first sdfasdasdfasdasdasdasd asdasdasdasdas asdasdasdasdasd asdasdasd"},
+    {src: "", article: "second"},
+    {src: "assets/skip.png", article: "first"},
+    {src: "assets/slide.png", article: "second"},
+    {src: "assets/skip.png", article: "first"},
+    {src: "assets/slide.png", article: "second"}
 
-        this.setState(
-            {
-                pageIndexStart: this.state.pageIndexStart+5
+];
+
+
+const ContentItem = (props) => {
+    const src=props.src;
+    const article=props.article;
+    return (
+        <div className="content-item">
+            {src && <div className="item-1">
+                        <img width="20px" height="20px" src={src} />
+                    </div>
             }
-        );
 
-        let tempList = this.state.articles.slice(this.state.pageIndexStart, this.state.pageIndexEnd);
-
-        this.setState({
-            filteredList: tempList
-        });
-        console.log(this.state.pageIndexStart);
-    }
-
-    showPrev = () => {
-
-        //if(this.state.articles.length<5) return;
-
-        if(this.state.pageIndexStart<=0) return;
-
-        this.setState(prevstate => (
-            {
-                pageIndexStart: prevstate.pageIndexStart-5
-            }
-        ));
-
-        let tempList = this.state.articles.splice(this.state.pageIndexStart, this.state.pageIndexEnd);
-
-        this.setState({
-            filteredList: tempList
-        });
-        console.log(this.state.pageIndexStart);
-    }
-    render() {
-
-        return (
-            <div>
-                {this.state.filteredList.map(item => (
-                        <article>{item}</article>
-                    )
-                )}
-                <div className="paginator">
-                    <div><button className="prev-button" onClick={this.showPrev}>Prev--</button></div>
-                    <div><button className="next-button" onClick={this.showNext}>next--</button></div>
-                </div>
+            <div className="item-3">
+                <article>{article}</article>
             </div>
-        );
-        
-    }
+            
+        </div>
+    );
 }
 
 
-let articleList = new Array();
 
-for(let i=0;i<50;i++) {
-    articleList.push(i);
+const Content = (p) => {
+    const items = p.items;
+    return (
+        <div className="content-list">
+            {items && items.map(item => (
+                <ContentItem article={item.article} src={item.src} />
+            ))}
+        </div>
+    )
 }
 
-console.log(articleList.length);
 
-ReactDOM.render(<Content articles={articleList} />, document.getElementById("content"));
+ReactDOM.render(<Content items={articleList} />, document.getElementById("root"));
