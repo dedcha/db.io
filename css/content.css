@@ -105,10 +105,22 @@
 
 .pagi-buttons button {
     border-radius: 10px;
+    width: 80px;
+    height: 50px;
 }
 
 .pagi-buttons button:hover {
     background-color: rgb(138, 97, 97);
     width: 32%;
     cursor: pointer;
+}
+
+.paginator {
+    position: fixed;
+    bottom: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    z-index: 2;
 }
