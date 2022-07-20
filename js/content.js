@@ -85,7 +85,8 @@ const Content = (p) => {
 
     const nextPage = () => {
         if(items.length<6) return;
-        if(pageStart>=items.length-5) {
+        if(pageStart>items.length-5) {
+            setPageStart(items.length-5);
             var tempList = items.slice(pageStart, items.length);
             setTempItems(tempList);
             setPageOutEnd(true);
@@ -100,7 +101,8 @@ const Content = (p) => {
 
     const prevPage = () => {
         if(items.length<6) return;
-        if(pageStart<=0) {
+        if(pageStart<0) {
+            setPageStart(0);
             var tempList = items.slice(pageStart, pageStart+items.length);
             setTempItems(tempList);
             setPageOutStart(true);
