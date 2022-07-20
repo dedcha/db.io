@@ -3,25 +3,43 @@
 
 
 let articleList = [
-
-    {src: "assets/skip.png", article: "ParagraphParagraphsarethegroupofsentencescombinedtogether,aboutacertaintopic.Itisaveryimportantformofwritingaswewritealmosteverythinginparagraphs,beitananswer,essay,story,emails,etc.Wecansaythatawell-structuredparagraphistheessenceofgoodwriting.Thepurposesoftheparagrapharetogiveinformation,toexplainsomething,totellastory,andtoconvincesomeonethatourideaisright.Paragraphsareblocksoftextualcontentthatsegmentoutalargerpieceofwriting—stories,novels,articles,creativewriting,orprofessionalwritingportions—makingitlesscomplicatedtoreadandunderstand.Excellentparagraphsareanavailablewritingskillforplentyoftypesofliterature,andproperwriterscansubstantiallybeautifytheclarityoftheirnews,essays,orfictionwritingwhilstconstructingnicely."},
-    {src: "", article: "second"},
-    {src: "assets/skip.png", article: "first"},
-    {src: "assets/slide.png", article: "second"},
-    {src: "assets/skip.png", article: "first"},
-    {src: "assets/slide.png", article: "3"},
-    {src: "assets/skip.png", article: "ParagraphParagraphsarethegroupofsentencescombinedtogether,aboutacertaintopic.Itisaveryimportantformofwritingaswewritealmosteverythinginparagraphs,beitananswer,essay,story,emails,etc.Wecansaythatawell-structuredparagraphistheessenceofgoodwriting.Thepurposesoftheparagrapharetogiveinformation,toexplainsomething,totellastory,andtoconvincesomeonethatourideaisright.Paragraphsareblocksoftextualcontentthatsegmentoutalargerpieceofwriting—stories,novels,articles,creativewriting,orprofessionalwritingportions—makingitlesscomplicatedtoreadandunderstand.Excellentparagraphsareanavailablewritingskillforplentyoftypesofliterature,andproperwriterscansubstantiallybeautifytheclarityoftheirnews,essays,orfictionwritingwhilstconstructingnicely."},
-    {src: "", article: "second"},
-    {src: "assets/skip.png", article: "4"},
-    {src: "assets/slide.png", article: "5"},
-    {src: "assets/skip.png", article: "6"},
-    {src: "assets/slide.png", article: "7"},
-    {src: "assets/skip.png", article: "ParagraphParagraphsarethegroupofsentencescombinedtogether,aboutacertaintopic.Itisaveryimportantformofwritingaswewritealmosteverythinginparagraphs,beitananswer,essay,story,emails,etc.Wecansaythatawell-structuredparagraphistheessenceofgoodwriting.Thepurposesoftheparagrapharetogiveinformation,toexplainsomething,totellastory,andtoconvincesomeonethatourideaisright.Paragraphsareblocksoftextualcontentthatsegmentoutalargerpieceofwriting—stories,novels,articles,creativewriting,orprofessionalwritingportions—makingitlesscomplicatedtoreadandunderstand.Excellentparagraphsareanavailablewritingskillforplentyoftypesofliterature,andproperwriterscansubstantiallybeautifytheclarityoftheirnews,essays,orfictionwritingwhilstconstructingnicely."},
-    {src: "", article: "8"},
-    {src: "assets/skip.png", article: "9"},
-    {src: "assets/slide.png", article: "10"},
-    {src: "assets/skip.png", article: "11"},
-    {src: "assets/slide.png", article: "12"},
+    {src: "assets/Shaded/sprite_0052.png", article: "0"},
+    {src: "assets/Shaded/sprite_0053.png", article: "0"},
+    {src: "assets/Shaded/sprite_0054.png", article: "0"},
+    {src: "assets/Shaded/sprite_0055.png", article: "0"},
+    {src: "assets/Shaded/sprite_0056.png", article: "0"},
+    {src: "assets/Shaded/sprite_0057.png", article: "0"},
+    {src: "assets/Shaded/sprite_0058.png", article: "0"},
+    {src: "assets/Shaded/sprite_0059.png", article: "0"},
+    {src: "assets/Shaded/sprite_0060.png", article: "0"},
+    {src: "assets/Shaded/sprite_0061.png", article: "0"},
+    {src: "assets/Shaded/sprite_0062.png", article: "0"},
+    {src: "assets/Shaded/sprite_0063.png", article: "0"},
+    {src: "assets/Shaded/sprite_0064.png", article: "0"},
+    {src: "assets/Shaded/sprite_0065.png", article: "0"},
+    {src: "assets/Shaded/sprite_0066.png", article: "0"},
+    {src: "assets/Shaded/sprite_0067.png", article: "0"},
+    {src: "assets/Shaded/sprite_0068.png", article: "0"},
+    {src: "assets/Shaded/sprite_0069.png", article: "0"},
+    {src: "assets/Shaded/sprite_0070.png", article: "0"},
+    {src: "assets/Shaded/sprite_0071.png", article: "0"},
+    {src: "assets/Shaded/sprite_0072.png", article: "0"},
+    {src: "assets/Shaded/sprite_0073.png", article: "0"},
+    {src: "assets/Shaded/sprite_0074.png", article: "0"},
+    {src: "assets/Shaded/sprite_0075.png", article: "0"},
+    {src: "assets/Shaded/sprite_0076.png", article: "0"},
+    {src: "assets/Shaded/sprite_0077.png", article: "0"},
+    {src: "assets/Shaded/sprite_0078.png", article: "0"},
+    {src: "assets/Shaded/sprite_0079.png", article: "0"},
+    {src: "assets/Shaded/sprite_0080.png", article: "0"},
+    {src: "assets/Shaded/sprite_0081.png", article: "0"},
+    {src: "assets/Shaded/sprite_0082.png", article: "0"},
+    {src: "assets/Shaded/sprite_0083.png", article: "0"},
+    {src: "assets/Shaded/sprite_0084.png", article: "0"},
+    {src: "assets/Shaded/sprite_0085.png", article: "0"},
+    {src: "assets/Shaded/sprite_0086.png", article: "0"},
+    {src: "assets/Shaded/sprite_0087.png", article: "0"},
+    {src: "assets/Shaded/sprite_0088.png", article: "0"},
 
 ];
 
@@ -55,10 +73,9 @@ const Content = (p) => {
     const [pageOutEnd, setPageOutEnd]=useState(false);
 
     useEffect(() => {
-        var tItems=items.slice(0,5);
+        var tItems=items.slice(pageStart,pageStart+5);
         setTempItems(tItems);
-        console.log(tempItems, items);
-    }, []);
+    }, [pageStart]);
 
     const [checkTempItems,setCheckTempItems] = useState(false);
 
@@ -67,7 +84,7 @@ const Content = (p) => {
     }, [tempItems]);
 
     const nextPage = () => {
-        if(items.length<5) return;
+        if(items.length<6) return;
         if(pageStart>=items.length-5) {
             var tempList = items.slice(pageStart, items.length);
             setTempItems(tempList);
@@ -82,7 +99,7 @@ const Content = (p) => {
     }
 
     const prevPage = () => {
-        if(items.length<5) return;
+        if(items.length<6) return;
         if(pageStart<=0) {
             var tempList = items.slice(pageStart, pageStart+items.length);
             setTempItems(tempList);
@@ -98,8 +115,8 @@ const Content = (p) => {
 
     return (
         <div className="content-list">
-            {tempItems && tempItems.map(item => (
-                <ContentItem article={item.article} src={item.src} />
+            {tempItems && tempItems.map((item, index) => (
+                <ContentItem key={index} article={item.article} src={item.src} />
             ))}
 
             {!checkTempItems && <div>Loading..</div>}
